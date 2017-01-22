@@ -18,5 +18,9 @@
             <h2><a href="">family status</a></h2>
             <p>wife son daughter </p>
         </div>
+
+        {%for post in p %}
+          <li>{{post.text}} ---- {{post.author }} </li>
+        {% endfor %}
     </body>
 </html>
