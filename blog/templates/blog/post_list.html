@@ -1,5 +1,7 @@
 <html>
     <head>
+      <link rel="stylesheet" href="// ">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <title>Django Girls blog</title>
     </head>
     <body>
@@ -10,17 +12,17 @@
         <div>
             <p>Place of birth:KOLLAM</p>
             <h2><a href="">MOVIES ACTED</a></h2>
-            <p> <li>kasaba </li><li>pokkiriraja </li><li>varsham </li><li>vajram rajamanikyam </li>  </p>
+            <!-- <p> <li>kasaba </li><li>pokkiriraja </li><li>varsham </li><li>vajram rajamanikyam </li>  </p>
         </div>
 
         <div>
             <p>published: 14.06.2014, 12:14</p>
             <h2><a href="">family status</a></h2>
             <p>wife son daughter </p>
-        </div>
+        </div> -->
 
         {%for post in p %}
-          <li>{{post.text}} ---- {{post.author }} </li>
+          <li>{{post.text}} </li>
         {% endfor %}
     </body>
 </html>
